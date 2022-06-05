@@ -1,0 +1,63 @@
+.overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.75);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: var(--gray-800);
+  position: relative;
+  width: min(432px, 100%);
+  padding: 24px 32px 32px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: showModal .2s forwards;
+  
+}
+
+.header h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+div.footer {
+  display: flex;
+  gap: 8px;
+  width: min(284px, 100%);
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+div.footer > button {
+  width: min(138px, 100%);
+  display: block;
+  height: 48px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #E1E1E6;
+}
+
+div.footer > button.deleteButton {
+  background: #29292E;
+  font-weight: 700;
+  color: #F75A68;
+}
+
+@keyframes showModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
